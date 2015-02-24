@@ -1,0 +1,97 @@
+/* Font for everything without a specific font */
+* {
+    font-family: 		Lucida Sans
+    					,Arial
+    					,Helvetica
+    					,sans-serif;
+}
+
+/* General body if nothing is contained in a more specific tag */
+body {
+    margin: 			0px auto;
+}
+
+/* Largest header */
+header h1 {
+    font-size: 			36px;
+    margin: 			0px;
+}
+
+/* Sub header */
+header h2 {
+    font-size: 			18px;
+    margin: 			0px;
+    color: 				#db09db;
+    font-style: 		italic;
+}
+
+/* Navigation container */
+nav ul {
+    list-style: 		none;
+    padding: 			0px;
+    display: 			block;
+    clear: 				right;
+    background-color: 	#206B91;
+    padding-left: 		4px;
+    height: 			24px;
+}
+
+/* Navigation list item */
+nav ul li {
+    display: 			inline;
+    padding: 			0px 
+    					20px 
+    					5px 
+    					10px;
+    height: 			24px;
+    border-right: 		1px 
+    					solid 
+    					#ccc;
+}
+
+/* Navigation list item link */
+nav ul li a {
+    color: 				#EFD3D3;
+    text-decoration: 	none;
+    font-size: 			13px;
+    font-weight: 		bold;
+}
+
+/* Navigation list item link onMouseHover */
+nav ul li a:hover {
+    color: 				#ff03ff;
+}
+
+/* Header under article tag */
+article > header h1 {
+    font-size: 			20px;
+    margin-left: 		14px;
+}
+
+/* Header link under article tag */
+article > header h1 a {
+    color:				#993333;
+}
+
+/* Header image under article tag  */
+article > header h1 img {
+    vertical-align:   	middle;
+}
+
+/* Section header under article tag */
+article > section header h1 {
+    font-size: 			16px;
+}
+
+/* Paragraph tag under article */
+article p {
+    clear: 				both;
+}
+
+/* Paragraph tag under footer */
+footer p {
+    text-align: 		center;
+    font-size: 			12px;
+    color: 				#888;
+    margin-top: 		24px;
+}
