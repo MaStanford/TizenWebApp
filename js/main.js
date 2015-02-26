@@ -2,6 +2,19 @@ var startTime;
 var checkTime;
 var i = 0;
 
+Parse.initialize("APPLICATION_ID", "JAVASCRIPT_KEY");
+
+var TestObject = Parse.Object.extend("TestObject");
+var testObject = new TestObject();
+  testObject.save({foo: "bar"}, {
+  success: function(object) {
+    $(".success").show();
+  },
+  error: function(model, error) {
+    $(".error").show();
+  }
+});
+
 /**
  * Constructor for a user.
  */
@@ -14,8 +27,7 @@ function UserFactory() {
 /**
  * This is a literal object.
  */
-var Metrics = {time: 12345, phone: "tizen pooturd", car: "Hyndai", Deoderant: "None"
-				,toString : function(){
+var Metrics = {time: 12345, phone: "tizen pooturd", car: "Hyndai", Deoderant: "None",toString : function(){
 				return "Metrics on: {0} at {1} while driving {2}".format(phone, time, car);
 			  }
 };
@@ -39,9 +51,8 @@ var currentUser = {name : "Mark"};
  * We set a listener under this method.
  */
 var init = function () {
-	// TODO:: Do your initialization job
-	console.log("init() called");
-
+	
+	$.mobile.changePage('#home');
 	// add eventListener for tizenhwkey
 	document.addEventListener('tizenhwkey', function(e) {
 		if(e.keyName == "back") {

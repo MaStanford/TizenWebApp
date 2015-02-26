@@ -6,6 +6,10 @@
     					,sans-serif;
 }
 
+.topHead {
+	position:fixed;
+}
+
 /* General body if nothing is contained in a more specific tag */
 body {
     margin: 			0px auto;
